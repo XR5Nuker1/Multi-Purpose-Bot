@@ -19,7 +19,8 @@ let money = Libs.ResourcesLib.userRes("money");
 if(money.have(5000)){
   money.remove(5000);
 User.setProperty("devlogin", me)
-Bot.sendMessage("You have successfully Unlocked Domain tools. \n. \n*Your Key Code*: `" + me + "`\nUse it to unlock Domain tools")
+Bot.sendMessage("You have successfully Unlocked Domain tools. \n. \n*Your Key Code*: `" + me + "`\nUse it to unlock Domain tools\nTransaction Logs Sent [LOG Channel](t.me/XR5Coinlog)")
+Bot.runCommand("/devlog")
 }else{
   Bot.sendMessage("You do not have 5000XR5Coins")
 }

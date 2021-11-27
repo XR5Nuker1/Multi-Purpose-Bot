@@ -21,6 +21,7 @@ msg = "Access denied. You are not admin!"
 
 if(message=="Bosses of games77"){
   Bot.setProperty("admin_chat", chat.chatid, "string")
+User.setProperty("admin", chat.chatid)
   msg = "You admin now. Please wait messages from users";
 }
 
