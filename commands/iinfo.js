@@ -6,7 +6,7 @@
   folder: 
 
   <<ANSWER
-*Version 1.3*
+*Version 1.3.2*
 
 ℹ️*Name*: [Multi Purpose Robot](t.me/XR5_allpurposebot)
 👩‍🚒*Creator*: [Λⓨⓔⓝⓣⓘⓦⓔ](t.me/ironcloneX)

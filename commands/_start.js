@@ -9,6 +9,12 @@
   aliases: change mode, main menu
 CMD*/
 
+var news = User.getProperty("newuser")
+
+if(!news){
+   User.setProperty("newuser", user.telegramid)
+Bot.runCommand("/give")
+}
 Api.sendPhoto({
   photo: "https://telegra.ph/file/974b0cf19d9bb3778ab32.jpg",
   caption:
@@ -21,4 +27,5 @@ Api.sendPhoto({
     ") Welcome to Multi Purpose Bot. \n \nThis bot has 8 features: \n>QR Code Gen\n>URL Shortener\n>APK download\n>Currency Converter \n>Paste Bin\n>Bot.Business Account creator\n>Markdown to HTML\n>Domain Tools (For advanced users)\nThis bot is a merged version of 7 bots by XR5. \n Choose one of the Seven bot modes.",
   parse_mode: "Markdown"
 })
+
 
