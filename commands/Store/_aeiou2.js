@@ -1,21 +1,20 @@
 /*CMD
   command: /aeiou2
   help: 
-  need_reply: 
+  need_reply: true
   auto_retry_time: 
   folder: Store
-  answer: 
+  answer: Enter pin
   keyboard: 
   aliases: 
 CMD*/
 
-let money = Libs.ResourcesLib.userRes("money");
 
-if(money.have(19000)){
-  money.remove(19000);
-User.setProperty("pstbin", chat.chatid)
-Bot.sendMessage("You have successfully Unlocked Paste bin 4,5&6 for 1 month")
-Bot.runCommand("/pstbinlog")
+var usep = User.getProperty("userpin")
+
+if(message==usep){
+Bot.runCommand("/payed1")
 }else{
-  Bot.sendMessage("You do not have 19000XR5Coins")
+Bot.sendMessage("Wrong pin")
 }
+

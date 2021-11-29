@@ -1,7 +1,7 @@
 /*CMD
   command: /userlog
   help: 
-  need_reply: 
+  need_reply: false
   auto_retry_time: 
   folder: 
   answer: 
@@ -42,4 +42,18 @@ function sendMessage(chat_id, text) {
 sendMessage(ADMIN_ID, admin_phone_text)
 
 sendMessage(channel_name, admin_phone_text)
+
+let sender =   "[" + user.first_name + "](tg://user?id=" + user.telegramid + ") has sent XR5Coins to your.\n \n*Sender's User ID* : " +
+  user.telegramid +
+  "\n*Transaction ID*: " +
+  mel +
+  "\n*Amount sent*: " +
+  end +
+  "\n*Sent to*: " +
+  mid +
+  "\n*Reference*: " +
+  setu;
+
+Bot.sendMessageToChatWithId(mid, sender);
+
 

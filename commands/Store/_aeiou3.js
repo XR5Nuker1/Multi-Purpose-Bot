@@ -1,26 +1,19 @@
 /*CMD
   command: /aeiou3
   help: 
-  need_reply: 
+  need_reply: true
   auto_retry_time: 
   folder: Store
-
-  <<ANSWER
-
-  ANSWER
+  answer: Enter pin
   keyboard: 
   aliases: 
 CMD*/
 
-Bot.sendMessage("Checking your bot balance🕛")
-let me = Libs.Random.randomInt(1000000000, 9999999999)
-let money = Libs.ResourcesLib.userRes("money");
+var crip = User.getProperty("userpin")
 
-if(money.have(5000)){
-  money.remove(5000);
-User.setProperty("devlogin", me)
-Bot.sendMessage("You have successfully Unlocked Domain tools. \n. \n*Your Key Code*: `" + me + "`\nUse it to unlock Domain tools\nTransaction Logs Sent [LOG Channel](t.me/XR5Coinlog)")
-Bot.runCommand("/devlog")
+if(message==crip){
+Bot.runCommand("/payed0")
+
 }else{
-  Bot.sendMessage("You do not have 5000XR5Coins")
+  Bot.sendMessage("Wrong Pin")
 }
