@@ -1,11 +1,17 @@
 /*CMD
   command: Shop🛒
   help: 
-  need_reply: false
+  need_reply: 
   auto_retry_time: 
   folder: Store
-  answer: Welcome to bot store you can buy anything out of XR5Coins.
-  keyboard: Buy Ultra Access, \nUnlock Paste bins, Unlock Domain Tools, \nBalance, MAIN Menu
+  answer: 
+  keyboard: 
   aliases: 
 CMD*/
 
+var but = User.getProperty("userpin")
+if(!but){
+Bot.runCommand("/generatepin")
+}else{
+Bot.runCommand("/pinok")
+}

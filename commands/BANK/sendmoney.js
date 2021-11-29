@@ -1,38 +1,30 @@
 /*CMD
-  command: /send
+  command: sendmoney
   help: 
   need_reply: 
   auto_retry_time: 
-  folder: Store
+  folder: BANK
   answer: 
   keyboard: 
   aliases: 
 CMD*/
 
-if(params){
-  let arr = params.split(" ");
-  
-  let telegramid = arr[0];
-  let amount = arr[1];  
+let amount = User.getProperty("sendmoney")
 
-  if(!arr[1]){
-    Bot.sendMessage("No amount. Need amount");
-  }else{
-    amount = parseFloat(amount);
+let telegramid = User.getProperty("TGramID")
+amount = parseFloat(amount);
     let res = Libs.ResourcesLib.userRes("money");
     let anotherRes = Libs.ResourcesLib.anotherUserRes("money", telegramid);
-    
-    if(res.have(amount)){
+
+
+if(res.have(amount)){
        if( res.transferTo(anotherRes, amount) ){
 Bot.sendMessage("Transfered XR5Coins: " + amount + "\nTo User" + telegramid)
 Bot.runCommand("/paymentlog")
 User.setProperty("TGramID", telegramid)
 User.setProperty("Sendmoney", amount)
-       }
-     }else{
-        Bot.sendMessage("You have not such XR5Coins: " + amount)
-     }
-  }
-}else{
-  Bot.sendMessage("No params. Need another user TelegramID and AMOUNT")
+} else { 
+Bot.sendMessage("You don't have " + amount + "XR5Coins")
 }
+}
+

@@ -15,4 +15,4 @@ var buttons = [
     {title: "Shorten URL", command: "/345" }
 ];
 
-Bot.sendInlineKeyboard(buttons, "Do you want to shorten your link?\n \nURL: `" + urllink + "`");
+Bot.sendInlineKeyboard(buttons, "Do you want to shorten your link?\n \nURL: `" + urllink + "`", {is_reply: true});

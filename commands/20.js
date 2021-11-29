@@ -53,6 +53,7 @@ resetCooldown(); // need to reset cooldown
 Bot.sendMessage("You can use command now");
 // your other code here
 //..
+
 let from_cur = User.getProperty("from-currency");
 let to_cur = User.getProperty("to-currency");
 
