@@ -21,10 +21,7 @@ if(res.have(amount)){
        if( res.transferTo(anotherRes, amount) ){
 Bot.sendMessage("Transfered XR5Coins: " + amount + "\nTo User" + telegramid)
 Bot.runCommand("/paymentlog")
-User.setProperty("TGramID", telegramid)
-User.setProperty("Sendmoney", amount)
 } else { 
 Bot.sendMessage("You don't have " + amount + "XR5Coins")
 }
 }
-

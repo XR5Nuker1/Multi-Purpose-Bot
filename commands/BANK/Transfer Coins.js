@@ -1,5 +1,5 @@
 /*CMD
-  command: Transfer
+  command: Transfer Coins
   help: 
   need_reply: true
   auto_retry_time: 

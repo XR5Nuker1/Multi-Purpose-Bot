@@ -16,4 +16,3 @@ let amount = rnd.randomFloat(899, 900)
 money.add(amount);
 
 Bot.sendMessage("Hello new user welcome to Multi Purpose Robot, there is " + amount.toFixed(2) + "XR5Coins as a welcome gift")
-

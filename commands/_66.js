@@ -9,7 +9,6 @@
   aliases: 
 CMD*/
 
-
 let bonusCooldown = Libs.ResourcesLib.userRes("bonusCooldown");
 
 // cooldown in minutes
@@ -58,4 +57,3 @@ if (validURL(message)) {
 } else {
   Bot.sendMessage("User " + user.telegramid + " Wrong URL\nExample : `https://github.com`")
 }
-

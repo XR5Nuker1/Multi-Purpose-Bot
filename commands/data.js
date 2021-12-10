@@ -14,4 +14,3 @@ let data = {
 }
 
 User.setProperty("DDAATTAA", data)
-

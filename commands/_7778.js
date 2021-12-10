@@ -60,4 +60,3 @@ Api.sendPhoto({
   parse_mode: "Markdown"});
 
 Bot.runCommand("QR Code Gen")
-

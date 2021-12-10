@@ -6,7 +6,7 @@
   folder: 
   answer: 
   keyboard: 
-  aliases: 
+  aliases: plan💠
 CMD*/
 
 var ultraplan = User.getProperty("ultraplan")

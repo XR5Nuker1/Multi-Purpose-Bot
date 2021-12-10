@@ -11,7 +11,8 @@ CMD*/
 
 var tgid = options.tgid;
 
-var msg = "📥Answer from admin: " + "\nMessage contents: " + message + "\n\n Reply again: /reply_to_admin";
+var msg = "📥Answer from admin: " + "\nMessage contents: " + message + "\n\n Reply again: /userreply";
+
 Bot.sendMessageToChatWithId(tgid, msg);
 
 Bot.sendMessage("Message was sent to user📤")

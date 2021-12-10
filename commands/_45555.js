@@ -19,5 +19,3 @@ if (validURL(message)) {
   document: message,
   caption: "*Your or code has been generated.*\n \n *Message text*: " + message + "\n \n_Thank You for using the bot_",
   parse_mode: "Markdown"});}
-
-

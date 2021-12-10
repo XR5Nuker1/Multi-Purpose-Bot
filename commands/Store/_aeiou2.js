@@ -9,7 +9,6 @@
   aliases: 
 CMD*/
 
-
 var usep = User.getProperty("userpin")
 
 if(message==usep){
@@ -17,4 +16,3 @@ Bot.runCommand("/payed1")
 }else{
 Bot.sendMessage("Wrong pin")
 }
-
