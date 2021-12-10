@@ -26,4 +26,3 @@ User.setProperty("admin", chat.chatid)
 }
 
 Bot.sendMessage(msg);
-

@@ -15,7 +15,11 @@ var setu = User.getProperty("ref")
 
 var mel = Libs.Random.randomInt(10000000000000000, 99999999999999999)
 let admin_phone_text =
-  "[" + user.first_name + "](tg://user?id=" + user.telegramid + ") has sent XR5Coins.\n \n*User ID* : " +
+  "[" +
+  user.first_name +
+  "](tg://user?id=" +
+  user.telegramid +
+  ") has sent XR5Coins.\n \n*User ID* : " +
   user.telegramid +
   "\n*Transaction ID*: " +
   mel +
@@ -43,7 +47,12 @@ sendMessage(ADMIN_ID, admin_phone_text)
 
 sendMessage(channel_name, admin_phone_text)
 
-let sender =   "[" + user.first_name + "](tg://user?id=" + user.telegramid + ") has sent XR5Coins to your.\n \n*Sender's User ID* : " +
+let sender =
+  "[" +
+  user.first_name +
+  "](tg://user?id=" +
+  user.telegramid +
+  ") has sent XR5Coins to your.\n \n*Sender's User ID* : " +
   user.telegramid +
   "\n*Transaction ID*: " +
   mel +
@@ -52,8 +61,7 @@ let sender =   "[" + user.first_name + "](tg://user?id=" + user.telegramid + ") 
   "\n*Sent to*: " +
   mid +
   "\n*Reference*: " +
-  setu;
+  setu
 
-Bot.sendMessageToChatWithId(mid, sender);
-
+Bot.sendMessageToChatWithId(mid, sender)
 

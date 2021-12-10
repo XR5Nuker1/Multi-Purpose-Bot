@@ -33,4 +33,3 @@ if (message == "52") {
 } else {
   Bot.sendMessage("Wrong answer /try again")
 }
-

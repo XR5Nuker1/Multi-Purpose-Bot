@@ -9,10 +9,9 @@
   aliases: 
 CMD*/
 
-var urllink = User.getProperty("link")
+var nip = User.getProperty("link")
 
-var buttons = [
-    {title: "Shorten URL", command: "/345" }
-];
-
-Bot.sendInlineKeyboard(buttons, "Do you want to shorten your link?\n \nURL: `" + urllink + "`", {is_reply: true});
+HTTP.get({
+    url: "http://tinyurl.com/api-create.php?url=" + nip,
+    success: "67onSuccess"
+  })

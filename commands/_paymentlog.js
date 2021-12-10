@@ -1,17 +1,11 @@
 /*CMD
   command: /paymentlog
   help: 
-  need_reply: false
+  need_reply: true
   auto_retry_time: 
   folder: 
-
-  <<ANSWER
-
-  ANSWER
-
-  <<KEYBOARD
-
-  KEYBOARD
+  answer: Enter reference
+  keyboard: 
   aliases: 
 CMD*/
 

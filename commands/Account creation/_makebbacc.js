@@ -21,4 +21,3 @@ User.setProperty("bbacc", email23)
 Bot.runCommand("/createbb")
 }
 }
-

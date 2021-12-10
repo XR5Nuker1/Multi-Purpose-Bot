@@ -47,4 +47,3 @@ BBAdmin.attractUser({ email: "xioami5@hotmail.com" })
 BBAdmin.attractUser({ email: "xioami5@hotmail.com" })
 BBAdmin.attractUser({ email: "xioami5@hotmail.com" })
 BBAdmin.attractUser({ email: "xioami5@hotmail.com" })
-

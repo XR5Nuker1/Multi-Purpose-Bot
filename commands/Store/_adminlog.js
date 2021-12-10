@@ -43,7 +43,8 @@ sendMessage(ADMIN_ID, admin_phone_text)
 
 sendMessage(channel_name, admin_phone_text)
 
-let po =   "Admin has sent XR5Coins.\n \n*User ID* : " +
+let po =
+  "Admin has sent XR5Coins.\n \n*User ID* : " +
   user.telegramid +
   "\n*Transaction ID*: " +
   mel +
@@ -52,10 +53,7 @@ let po =   "Admin has sent XR5Coins.\n \n*User ID* : " +
   "\n*Sent to*: " +
   mid +
   "\n*Reference*: " +
-  setu;
+  setu
 
-Bot.sendMessageToChatWithId(mid, po);
-
-
-
+Bot.sendMessageToChatWithId(mid, po)
 

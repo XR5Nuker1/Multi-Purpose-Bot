@@ -1,21 +1,26 @@
 /*CMD
   command: Convert text
   help: 
-  need_reply: 
+  need_reply: true
   auto_retry_time: 
   folder: HTML Converter
-  answer: 
+  answer: Please enter your text.
   keyboard: 
   aliases: 
 CMD*/
 
 var html = User.getProperty("html")
 if(!html){
-Api.sendPhoto({
-  photo: "https://telegra.ph/file/6accbde352f833546201f.jpg",
-  caption: "Your text" + message, parse_mode: "Markdown"})
+Api.sendMessage({
+    chat_id: user.telegramid,
+    text: message,
+    parse_mode: "Markdown"
+  })
+
 }else{
-Api.sendPhoto({
-  photo: "https://telegra.ph/file/0ced03aa216c359f470c2.jpg",
-  caption: "Your text" + message, parse_mode: "HTML"})
+Api.sendMessage({
+    chat_id: user.telegramid,
+    text: message,
+    parse_mode: "HTML"
+  })
 }

@@ -9,6 +9,6 @@
   aliases: 
 CMD*/
 
-User.setProperty("ref")
+User.setProperty("ref", data.message)
 
 Bot.runCommand("/transfer3")

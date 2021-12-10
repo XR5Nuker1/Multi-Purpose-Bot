@@ -9,7 +9,7 @@
   aliases: buy ultra access
 CMD*/
 
-var iit = User.getProperty("ultraplan")
+var iit = User.getProperty("planlogin")
 if(!iit){
 var buttons = [
     {title: "Buy with XR5Coins", command: "/aeiou" }

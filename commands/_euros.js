@@ -9,7 +9,7 @@
   aliases: 
 CMD*/
 
-var red = User.setProperty("ultraplan")
+var red = User.getProperty("ultraplan")
 
 if(!red){
 Bot.runCommand("/euros5")

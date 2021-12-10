@@ -4,10 +4,7 @@
   need_reply: true
   auto_retry_time: 
   folder: 
-
-  <<ANSWER
-
-  ANSWER
+  answer: 
   keyboard: 
   aliases: 
 CMD*/
@@ -35,4 +32,3 @@ Bot.run({
   command: "/adminReply",
   options: { tgid: tgid }  // pass tgid in options to that command
 });
-

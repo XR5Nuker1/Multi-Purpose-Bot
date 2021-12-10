@@ -4,13 +4,9 @@
   need_reply: 
   auto_retry_time: 
   folder: 
-
-  <<ANSWER
-*Warning*
-
-Due to a few problems with the bot server the status update time might get your results after a long time. Do you wish to continue?
-  ANSWER
-  keyboard: Yes, No
+  answer: 
+  keyboard: 
   aliases: 
 CMD*/
 
+Bot.sendMessage("_please wait while the bot obtains your results from server_⚙️", {on_result: "/yes"})

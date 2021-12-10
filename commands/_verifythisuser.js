@@ -4,14 +4,10 @@
   need_reply: false
   auto_retry_time: 
   folder: 
-
-  <<ANSWER
-
-  ANSWER
+  answer: 
   keyboard: 
   aliases: 
 CMD*/
 
-
-   User.setProperty("version", chat.chatid)
+User.setProperty("version", chat.chatid)
 Bot.sendMessage("You have been verified to use the bot")

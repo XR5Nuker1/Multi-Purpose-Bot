@@ -14,9 +14,8 @@ Enter your pin to confirm.
   aliases: 
 CMD*/
 
-
-var memo = User.setProperty("userpin")
-if(message==memo){
+var memo = User.getProperty("userpin")
+if(message = memo){
 Bot.runCommand("sendmoney")
 }else{
 Bot.sendMessage("Wrong Pin Operation canceled")

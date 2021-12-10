@@ -6,7 +6,6 @@
   folder: 
 
   <<ANSWER
-
 Talk to Admin for payment methods
  Talk to Admin after paying to receive redemption code.
   ANSWER

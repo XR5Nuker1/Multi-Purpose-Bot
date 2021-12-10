@@ -1,5 +1,5 @@
 /*CMD
-  command: /cuspin
+  command: Change Pin
   help: 
   need_reply: true
   auto_retry_time: 
@@ -11,4 +11,6 @@ CMD*/
 
 User.setProperty("userpin", data.message)
 
-Bot.sendMessage("Your new Pin is: " + message)
+Bot.sendMessage("saving you pin⚙️",
+   {on_result: "/cuspin1" }
+)

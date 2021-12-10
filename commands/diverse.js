@@ -9,16 +9,14 @@
   aliases: 
 CMD*/
 
-
 let rnd = Libs.Random; 
 
-let money = Libs.ResourcesLib.userRes("money");
+let wood = Libs.ResourcesLib.userRes("wood");
 let amount = rnd.randomFloat(100, 600) 
-money.add(amount);
+wood.add(amount);
 
 var buttons = [
     {title: "Try Again", command: "Dice🎲 (BETA)" }
 ];
 
-Bot.sendInlineKeyboard(buttons, user.first_name + " " + user.last_name + " (" + user.telegramid + ") Your Result is: \n \n*Dice Number*: " + options.result.dice.value + "\n*Amount added*: " + amount.toFixed(2) + "\n*Your Current Balance*: " + money.value().toFixed(2) );
-
+Bot.sendInlineKeyboard(buttons, user.first_name + " " + user.last_name + " (" + user.telegramid + ") Your Result is: \n \n*Dice Number*: " + options.result.dice.value + "\n*Amount added*: " + amount.toFixed(2) + "💰COINS \n*Your Current Balance*: " + wood.value().toFixed(2) + "💰Coins");
