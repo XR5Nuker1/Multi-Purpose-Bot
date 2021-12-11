@@ -16,4 +16,3 @@ let nn = arr[1]
 var c = "+";
 Bot.sendMessage(telegrid + c + nn)
 }
-

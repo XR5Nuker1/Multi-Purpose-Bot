@@ -9,26 +9,24 @@
   aliases: 
 CMD*/
 
-if(!message){
-  // sometimes message can be blank
-  return // exit from command
+if (!request) {
+  return
 }
 
-var isAdminReply = message.indexOf("/reply") + 1
-if(!isAdminReply){ return }
+let new_members = request.new_chat_members
+let msg = "Hello, "
+let comma = ""
+let nne = Libs.Random.randomInt(1000000000, 9999999999)
 
-// only admin here!
-var admin_chat = Bot.getProperty("admin_chat");
-if(chat.chatid!=admin_chat){
- Bot.sendMessage("You are not admin!");
- return
+if (new_members.length > 0) {
+  for (var i = 0; i < new_members.length; i++) {
+    msg = msg + comma + Libs.commonLib.getNameFor(new_members[i])
+    comma = ", "
+  }
+  User.setProperty("code", nne);
+  msg =
+    msg +
+    "\n\nThank you for joining this group.\n\nHere is your code: `" + nne "` \n \nUse this code to unlock Multi Purpose Robot";
+  Bot.sendMessage(msg, { is_reply: true })
 }
 
-var tgid = message.split("/reply")[1]
-if(!tgid){ return }
-
-// run other command
-Bot.run({
-  command: "/adminReply",
-  options: { tgid: tgid }  // pass tgid in options to that command
-});

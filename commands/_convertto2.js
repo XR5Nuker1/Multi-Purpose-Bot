@@ -20,8 +20,8 @@ if(!from_cur||!to_cur){
 Bot.sendInlineKeyboard(buttons, "You need to set a conversion option in settings");;
 }else{
   let cu = User.getProperty("conver")
-var value = CurrencyQuote.convert({ amount: parseFloat(cu), from: from_cur, to: to_cur })
-   User.setProperty("convert", value)
+var value = CurrencyQuote.convert({ amount: parseInt(cu), from: from_cur, to: to_cur })
+   User.setProperty("convert", value.toFixed(2))
 User.setProperty("convert1", cu)
   Bot.sendMessage("Converting " + cu + from_cur + " to " + to_cur, {on_result: "/converted" }
   );

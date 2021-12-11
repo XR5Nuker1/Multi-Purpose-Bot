@@ -42,5 +42,3 @@ Api.forwardMessage({
 */
 
 Bot.sendMessage("Message was sent to admin");
-
-

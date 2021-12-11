@@ -64,4 +64,3 @@ let sender =
   setu
 
 Bot.sendMessageToChatWithId(mid, sender)
-

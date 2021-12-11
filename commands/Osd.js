@@ -9,11 +9,9 @@
   aliases: 
 CMD*/
 
-
 var now = new Date();
 
 Libs.DateTimeFormat.format(now, "H:MM TT");
 
 
 Bot.sendMessage(new Date() + " ieiej")
-

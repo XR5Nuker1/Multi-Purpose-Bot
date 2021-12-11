@@ -1,25 +1,24 @@
 /*CMD
-  command: /post1
+  command: /orobot
   help: 
   need_reply: true
   auto_retry_time: 
-  folder: Post
-  answer: Nmdmddn
+  folder: Talk to Admin
+  answer: Mxnxxndn
   keyboard: 
   aliases: 
 CMD*/
 
-var tyt = User.getProperty("channel")
 function sendMessage(chat_id, text) {
   if (!chat_id) {
     return
   }
   Api.sendMessage({
     chat_id: chat_id,
-    text: message,
+    text: text,
     parse_mode: "Markdown"
   })
 }
 
-sendMessage(tyt, message)
-
+sendMessage(message, message)
+Bot.sendMessage("Message has been sent to your channel")

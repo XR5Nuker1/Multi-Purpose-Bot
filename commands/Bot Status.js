@@ -25,5 +25,3 @@ var buttons = [
 ];
 
 Bot.sendInlineKeyboard(buttons, "*Check Current Status* 👇\n \n*Current Date*: " + new Date() + "\n*CPU Used*: " + randomInt.toFixed(2) + "% / 100% \n*Storage Used*: " +  randomFloat.toFixed(2) + "MB / 1012.8MB\n*RAM Used*: " + random4.toFixed(2) + "MB / 256.7MB \n*Upload Speed*: " + random4Int.toFixed(2) + "Mbps\n*Ping (ms)*: " + ranomInt + "ms")
-
-

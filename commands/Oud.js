@@ -14,4 +14,3 @@ Api.sendMessage({
     text: message,
     parse_mode: "Markdown"
   })
-
