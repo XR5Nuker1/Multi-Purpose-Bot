@@ -10,10 +10,7 @@
 
 <Post>
   ANSWER
-
-  <<KEYBOARD
-
-  KEYBOARD
+  keyboard: 
   aliases: 
 CMD*/
 
@@ -26,5 +23,3 @@ Bot.runCommand("/start")
 }else{
 Bot.sendMessage("Canceled post")
 }
-
-

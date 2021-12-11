@@ -1,14 +1,13 @@
 /*CMD
-  command: /setup2
+  command: /delcha1
   help: 
   need_reply: 
   auto_retry_time: 
-  folder: 
+  folder: Post
   answer: 
   keyboard: 
   aliases: 
 CMD*/
 
-AdminPanel.deletePanel({
-    panel_name: "Channel",
-});
+User.setProperty("post1")
+Bot.runCommand("/cha1")

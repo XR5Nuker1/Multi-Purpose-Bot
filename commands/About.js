@@ -5,7 +5,7 @@
   auto_retry_time: 
   folder: 
   answer: Choose
-  keyboard: More, Plan💠, \nBot Info, Bot Status, \nMAIN Menu
+  keyboard: More, Plan💠, \nBot Infoℹ️, Bot Status, \nMAIN Menu
   aliases: 
 CMD*/
 

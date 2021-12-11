@@ -21,4 +21,3 @@ Bot.sendMessage("Exchange done successfully your new balances are:\n \n*XR5Coins
 } else {
 Bot.sendMessage("You don't have " + bud + "💰coins")
 }
-

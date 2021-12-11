@@ -24,3 +24,11 @@ Api.answerCallbackQuery({
   text: "Your Text Formatting Method has been saved to HTML.",
   show_alert: is_alert 
 })
+
+var buttons = [
+    {title: "Current Format: HTML", command: "/markdown"},
+{title: "Clear bins", command: "/clearbin" },
+    {title: "Conversion Option", command: "/touchutton1" } 
+];
+
+Bot.editInlineKeyboard(buttons)

@@ -11,4 +11,3 @@ CMD*/
 
 let money = Libs.ResourcesLib.userRes("money"); 
 money.set(0);
-

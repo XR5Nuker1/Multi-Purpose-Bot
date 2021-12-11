@@ -56,4 +56,3 @@ let po =
   setu
 
 Bot.sendMessageToChatWithId(mid, po)
-

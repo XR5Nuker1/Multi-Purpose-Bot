@@ -1,5 +1,5 @@
 /*CMD
-  command: /setup2
+  command: Bot Infoℹ️
   help: 
   need_reply: 
   auto_retry_time: 
@@ -9,6 +9,4 @@
   aliases: 
 CMD*/
 
-AdminPanel.deletePanel({
-    panel_name: "Channel",
-});
+Bot.sendMessage("loading bot information ⚙️", {on_result: "/uinfo"})

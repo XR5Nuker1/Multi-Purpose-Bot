@@ -15,7 +15,7 @@ var buttons = [
     {title: "Buy with XR5Coins", command: "/aeiou" }
 ];
 
-Bot.sendInlineKeyboard(buttons, "Are you sure you want to buy Ultra Access with XR5Coins?\n\n*Validity*: 1 mouth \n*Price*: 50000XR5Coins");
+Bot.sendInlineKeyboard(buttons, "Are you sure you want to buy Ultra Access with XR5Coins?\n\n*Validity*: Permanent \n*Price*: 6000000XR5Coins");
 }else{
 Bot.sendMessage("Already purchased")
 }

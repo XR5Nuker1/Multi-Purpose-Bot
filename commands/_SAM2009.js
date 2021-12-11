@@ -20,6 +20,6 @@ is_alert = ( params!="top")
 // help - https://core.telegram.org/bots/api#answercallbackquery
 Api.answerCallbackQuery({
   callback_query_id: request.id,
-  text: "🎉🎉V1.2.2 Update 🎉🎉\nUpdated: 19/11/2021\n \n>Added Markdown to HTML mode\n>Added BB Account creator\n>Fixed some bugs🛠️\n>All bot settings are now in About\n>Added Changelog",
+  text: "Error loading Changelog...",
   show_alert: is_alert 
 })

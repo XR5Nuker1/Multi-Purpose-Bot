@@ -20,4 +20,3 @@ let code = 'Obtained your results successfully. These are your results 👇: \n 
    '\nCrypto quotes updated: ' + cryptoLiveTime.toFixed(0) + ' minutes ago';
 let msg_id = options.result.message_id;
 Bot.editMessage(code, msg_id);
-

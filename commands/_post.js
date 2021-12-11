@@ -4,10 +4,7 @@
   need_reply: false
   auto_retry_time: 
   folder: 
-
-  <<ANSWER
-
-  ANSWER
+  answer: 
   keyboard: 
   aliases: 
 CMD*/
@@ -21,4 +18,3 @@ var buttons = [
 let re = Libs.Random.randomInt(10, 30)
 let msg_id = options.result.message_id;
 Bot.editInlineKeyboard(buttons, re, msg_id);
-

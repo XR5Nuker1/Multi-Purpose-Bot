@@ -12,8 +12,9 @@ CMD*/
 var from_cur = User.getProperty("from-currency");
 var to_cur = User.getProperty("to-currency");
 var buttons = [
-    {title: "From: " + from_cur, command: "/touchutton11" },
-    {title: "To: " + to_cur, command: "/6111111" }
+    {title: "From this Currency: " + from_cur, command: "/touchutton11" },
+    {title: "To This Currency: " + to_cur, command: "/6111111" },
+{title: "Back🔙", command: "/settings2"}
 ];
 
-Bot.sendInlineKeyboard(buttons, "This is your conversion option.\nFrom Currency: _" + from_cur + "_\n⇓⇓⇓\nTo Currency: " + to_cur + "\nPress to change");
+Bot.editInlineKeyboard(buttons);

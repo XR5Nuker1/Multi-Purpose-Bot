@@ -9,6 +9,5 @@
   aliases: 
 CMD*/
 
-
 Bot.sendMessage("Please make a choice. After that, another command `/touch` will be started with parameters", {on_result: "/post" }
 );

@@ -4,17 +4,15 @@
   need_reply: 
   auto_retry_time: 
   folder: 
-  answer: This is the Official version of the bot. Try our BETA testing version of the bot: [Testing Version](t.me/XR5BETA_allpurposebot)
-  keyboard: Modes, \nSettings, About, \nShop🛒, Talk to Admin
-  aliases: main menu
+  answer: 
+  keyboard: 
+  aliases: 
 CMD*/
 
-var news = User.getProperty("newuser")
+var hur = User.getProperty("allowed")
 
-if(!news){
-   User.setProperty("newuser", user.telegramid)
-Bot.runCommand("/give")
+if(!hur){
+Bot.runCommand("/join")
+}else{
+Bot.runCommand("/start3")
 }
-Bot.sendMessage("_Loading The bot config⚙️_.....", {on_result: "/tsd"})
-
-
