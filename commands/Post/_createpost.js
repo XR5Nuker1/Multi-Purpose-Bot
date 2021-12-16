@@ -19,8 +19,8 @@ var gen = User.getProperty("cha1")
 var noe = User.getProperty("cha2")
 
 var buttons = [
-  { title: gen, command: "/ch1" },
-  { title: noe, command: "/ch2" },
+  { title: "channel " + gen, command: "/ch1" },
+  { title: "channel " + noe, command: "/ch2" },
 {title: "Next⏭️", command: "/prepst"}
 ]
 

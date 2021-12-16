@@ -1,11 +1,17 @@
 /*CMD
   command: Get Bonus
   help: 
-  need_reply: 
+  need_reply: false
   auto_retry_time: 
   folder: BANK
-  answer: 
-  keyboard: 
+
+  <<ANSWER
+
+  ANSWER
+
+  <<KEYBOARD
+
+  KEYBOARD
   aliases: 
 CMD*/
 
@@ -19,7 +25,7 @@ let amoun4t = rnd.randomInt(900, 1300)
 money.add(amount);
 wood.add(amoun4t);
 
-Bot.sendMessage("You have earned: \n" amount.toFixed(2) + "XR5Coins\n" + amoun4t + "💰Coins as a daily bonus")
+Bot.sendMessage("You have earned: \n" + amount.toFixed(2) + "XR5Coins\n" + amoun4t + "💰Coins as a daily bonus")
 
   return true // if false - cooldown is not restarted
 }
@@ -32,7 +38,7 @@ function onWaiting(waitTime) {
 Libs.CooldownLib.chat.watch({
   // you need name for cooldown
   name: "BonusCooldown",
-  time: 24,
+  time: 86400,
   onEnding: onEnding,
   onWaiting: onWaiting
 })

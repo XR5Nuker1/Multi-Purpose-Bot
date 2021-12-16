@@ -1,11 +1,17 @@
 /*CMD
   command: /prepst
   help: 
-  need_reply: 
+  need_reply: false
   auto_retry_time: 
   folder: Post
-  answer: 
-  keyboard: 
+
+  <<ANSWER
+
+  ANSWER
+
+  <<KEYBOARD
+
+  KEYBOARD
   aliases: 
 CMD*/
 
@@ -21,8 +27,8 @@ var buttons = [
 Bot.sendInlineKeyboard(buttons, "To Use Channel slot Upgrade plan");
 }else{
 var tyy =[
-{ title: ert, command: "/cha3" },
-  { title: we, command: "/cha4" }
+{ title: "Channel " + ert, command: "/cha3" },
+  { title: "Channel "  + we, command: "/cha4" }
 ];
 Bot.editInlineKeyboard(tyy)
 }

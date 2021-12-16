@@ -1,18 +1,18 @@
 /*CMD
   command: /start
   help: 
-  need_reply: 
+  need_reply: false
   auto_retry_time: 
   folder: 
-  answer: 
-  keyboard: 
-  aliases: 
+  answer: This is the Official version of the bot. Try our BETA testing version of the bot: [Testing Version](t.me/XR5BETA_allpurposebot)
+  keyboard: Modes, \nSettings, About, \nUser Panel, Talk to Admin
+  aliases: main menu
 CMD*/
 
-var hur = User.getProperty("allowed")
+var news = User.getProperty("newuser")
 
-if(!hur){
-Bot.runCommand("/join")
-}else{
-Bot.runCommand("/start3")
+if(!news){
+   User.setProperty("newuser", user.telegramid)
+Bot.runCommand("/give")
 }
+Bot.sendMessage("_Loading The bot config⚙️_.....", {on_result: "/tsd"})
