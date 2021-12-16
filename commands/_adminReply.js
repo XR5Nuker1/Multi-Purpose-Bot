@@ -5,11 +5,14 @@
   auto_retry_time: 
   folder: 
   answer: Please send message to user.
-  keyboard: 
+
+  <<KEYBOARD
+
+  KEYBOARD
   aliases: 
 CMD*/
 
-var tgid = options.tgid;
+var tgid = User.getProperty("replyto")
 
 var msg = "📥Answer from admin: " + "\nMessage contents: " + message + "\n\n Reply again: /userreply";
 

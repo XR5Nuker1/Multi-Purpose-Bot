@@ -1,5 +1,5 @@
 /*CMD
-  command: Shop🛒
+  command: User Panel
   help: 
   need_reply: 
   auto_retry_time: 

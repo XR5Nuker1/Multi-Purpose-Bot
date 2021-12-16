@@ -5,7 +5,10 @@
   auto_retry_time: 
   folder: BANK
   answer: These are your balances☝️
-  keyboard: Change Pin, Transfer Coins, \nExchange Coins, MAIN Menu
+
+  <<KEYBOARD
+
+  KEYBOARD
   aliases: 
 CMD*/
 
