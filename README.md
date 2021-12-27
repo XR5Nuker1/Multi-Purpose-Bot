@@ -1,5 +1,5 @@
-# nukerrobot - chat bot
-It is repository for chat bot: [@nukerrobot](https://t.me/nukerrobot)
+# XR5_allpurposebot - chat bot
+It is repository for chat bot: [@XR5_allpurposebot](https://t.me/XR5_allpurposebot)
 
 ## What it is?
 This repository can be imported to [Bots.Business](https://bots.business) as a worked chat bot.

@@ -5,10 +5,7 @@
   auto_retry_time: 
   folder: BANK
   answer: These are your balances☝️
-
-  <<KEYBOARD
-
-  KEYBOARD
+  keyboard: 
   aliases: 
 CMD*/
 

@@ -1,11 +1,17 @@
 /*CMD
   command: /setup
   help: 
-  need_reply: 
+  need_reply: false
   auto_retry_time: 
   folder: 
-  answer: 
-  keyboard: 
+
+  <<ANSWER
+
+  ANSWER
+
+  <<KEYBOARD
+
+  KEYBOARD
   aliases: 
 CMD*/
 
@@ -20,7 +26,6 @@ var panel2 = {
             description: "you can get your admin_id with BJS Bot.sendMessage(user.telegramid)",
             type: "string",
             placeholder: "Enter your telegram id here"
-            // value: 100
         }
     ]
 }

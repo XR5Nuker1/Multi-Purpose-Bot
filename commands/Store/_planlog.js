@@ -13,7 +13,7 @@ var mel = Libs.Random.randomInt(10000000000000000, 99999999999999999);
 let admin_phone_text = "[" + user.first_name + "](tg://user?id=" + user.telegramid + ") has Bought the Ultra Plan redemption code.\n \n*User ID* : " + user.telegramid + "\n*Last Name*: " +  user.last_name + "\n*Transaction ID*: " + mel + "\n*Amount taken*: 50000XR5Coins";
 
 var ADMIN_ID = AdminPanel.getPanelValues("AdminInfo").ADMIN_ID;
-var channel_name = AdminPanel.getPanelValues("Chanell").channel_name
+var channel_name = Bot.getProperty("channel")
 function sendMessage(chat_id, text){
     if(!chat_id){ return }
     Api.sendMessage({

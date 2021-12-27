@@ -11,8 +11,13 @@ CMD*/
 
 var news = User.getProperty("newuser")
 
+
+if(!params){
 if(!news){
    User.setProperty("newuser", user.telegramid)
 Bot.runCommand("/give")
 }
 Bot.sendMessage("_Loading The bot config⚙️_.....", {on_result: "/tsd"})
+}else{
+Bot.runCommand(params)
+}

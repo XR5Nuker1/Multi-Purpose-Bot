@@ -29,4 +29,3 @@ if (new_members.length > 0) {
     "\n\nThank you for joining this group.\n\nHere is your code: `" + nne "` \n \nUse this code to unlock Multi Purpose Robot";
   Bot.sendMessage(msg, { is_reply: true })
 }
-

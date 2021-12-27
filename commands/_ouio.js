@@ -4,7 +4,7 @@
   need_reply: 
   auto_retry_time: 
   folder: 
-  answer:  Xmx d
+  answer: Xmx d
   keyboard: <from-currency>, <to-currency>
   aliases: 
 CMD*/
