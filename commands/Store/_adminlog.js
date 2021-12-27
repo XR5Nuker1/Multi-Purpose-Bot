@@ -1,11 +1,17 @@
 /*CMD
   command: /adminlog
   help: 
-  need_reply: 
+  need_reply: false
   auto_retry_time: 
   folder: Store
-  answer: 
-  keyboard: 
+
+  <<ANSWER
+
+  ANSWER
+
+  <<KEYBOARD
+
+  KEYBOARD
   aliases: 
 CMD*/
 
@@ -27,7 +33,7 @@ let admin_phone_text =
   setu
 
 var ADMIN_ID = AdminPanel.getPanelValues("AdminInfo").ADMIN_ID
-var channel_name = AdminPanel.getPanelValues("Chanell").channel_name
+var channel_name = Bot.getProperty("channel")
 function sendMessage(chat_id, text) {
   if (!chat_id) {
     return

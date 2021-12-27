@@ -5,10 +5,7 @@
   auto_retry_time: 
   folder: Web Search
   answer: Your search link: <searchres>
-
-  <<KEYBOARD
-
-  KEYBOARD
+  keyboard: 
   aliases: 
 CMD*/
 

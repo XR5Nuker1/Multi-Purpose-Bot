@@ -1,11 +1,17 @@
 /*CMD
   command: /botadd4
   help: 
-  need_reply: 
+  need_reply: false
   auto_retry_time: 
   folder: 
-  answer: 
-  keyboard: 
+
+  <<ANSWER
+
+  ANSWER
+
+  <<KEYBOARD
+
+  KEYBOARD
   aliases: 
 CMD*/
 
@@ -15,7 +21,8 @@ let aw = User.getProperty("botaddname")
 let aw1 = User.getProperty("botaddnaame")
 let aw2 = User.getProperty("botaddabout")
 let send = "You have a bot add request from [" + user.first_name + " " + user.last_name + "](tg://user?id=" + user.telegramid + ").\n\n*Bot Name*: " + aw1 + "\n*Bot Username*: " + aw + "\n*Bot About*: " + aw2;
-var channel_name = AdminPanel.getPanelValues("GROUP").channel_name
+var channel_name = Bot.getProperty("group")
+
 function sendMessage(chat_id, text) {
   if (!chat_id) {
     return
@@ -28,4 +35,5 @@ function sendMessage(chat_id, text) {
 }
 
 sendMessage(channel_name, send)
+
 
